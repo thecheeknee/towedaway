@@ -1,0 +1,149 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #ffffff;
+}
+.clearfix{clear: both; float: none;}
+.div-center{margin:0 auto;}
+.spacer{width:100%; height:56px;}
+.compress{padding: 0; margin: 0 0 10px 0;}
+
+a#logo-container{
+  max-width: 55px;
+  margin-top: 5px;
+}
+#logowrapper{
+  background: url('../images/logo.png') center center no-repeat;
+  background-size: contain;
+  width:300px;
+  height:300px;
+  max-width: 100%;
+}
+#logowrappersmall{
+  background: url('../images/logo.png') center center no-repeat;
+  background-size: contain;
+  width:200px;
+  height:200px;
+  margin-top:30px;
+  margin-bottom:30px;
+}
+div#logowrapper h1 {
+  margin: 0px;
+  padding: 83px 0 0 0;
+  font-size: 43px;
+}
+div#logowrappersmall h3 {
+  margin: 0px;
+  padding: 49px 0 0 0;
+  font-size: 31px;
+}
+#weddingpopup{
+  position: fixed;
+  top:0;
+  bottom:0;
+  z-index: 999;
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+}
+#weddingpopup .container{
+  height:100vh;
+  overflow: auto;
+}
+#blob{position: fixed; width:30px; height:30px; opacity:0; display:none; border-radius: 50%;}
+#closepopup{margin-top:10px;}
+
+#coupleSlider ul.indicators:before {
+  content: '';
+  background: rgb(0,0,0,0.5);
+  width: 80px;
+  height: 29px;
+  margin: 0 0 0 -40px;
+  position: absolute;
+  display: block;
+  z-index: 0;
+  bottom: 30%;
+  left: 50%;
+}
+
+#invitationWrapper{min-height:70vh; position: relative; margin-bottom: 50px;}
+#invitationWrapper h4{margin-bottom: 5vh;}
+#swiper{position: absolute; bottom:-29px; left:0;}
+#swiper>div{width:250px; position: relative;}
+#swiper col{position: relative;}
+.content-wrapper{display: none;}
+
+.screenheight{min-height:100vh;}
+.event-height{height:50vh; position: relative; }
+.event-wrapper{position: absolute; cursor: pointer; transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s; -moz-transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s; -webkit-transition: cubic-bezier(0.19, 1, 0.22, 1) 0.5s;}
+.event-wrapper:hover{z-index: 5; transform-origin:center center; -webkit-transform-origin:center center; transform: scale(1.1); -webkit-transform: scale(1.1); -moz-transform: scale(1.1);}
+.full-screen{width:100%;}
+.div-center{margin:0 auto;}
+.headings{
+    font-family: 'Handlee', cursive;
+}
+.text{
+    font-family: 'Patrick Hand', cursive;
+}
+.titles{padding-bottom:5px; border-bottom:1px solid;}
+.callouts{
+  border:2px solid #444;
+  padding:10px 12px !important;
+  margin-bottom:4vh;
+}
+.uppercase{text-transform: uppercase;}
+.lowercase{text-transform: lowercase;}
+.carousel-slider, .carousel-item, .carousel-bloc{
+  height:calc(100vh - 70px) !important;
+}
+.sidenav-overlay{z-index: 99 !important;}
+.carousel-bloc{
+  background:url(../images/background-slider.jpg) center center no-repeat; background-size: cover;
+}
+.circle-blob{
+  width:100%;
+  padding-top:100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.circle-blob div{position: absolute; top:0; left:0; width: 100%; height: 100%;}
+.circle-blob div span{display: block; text-align: center; width:100%; color:#ffffff; line-height: 18px;}
+.card-title{z-index: 2;}
+.card-image .callouts{margin-left: -10px;}
+
+footer a{display: block; padding:5px 0;}
+footer a i{vertical-align: middle; font-size: 100%; margin-right: 10px;}
+
+@media screen and (min-width:1024px){
+  div#slot1 {top: 3%;left: -80px;width: 100px;height: 100px;}
+  div#slot2 {bottom: 5%;left: -121px;width: 200px;height: 200px;}
+  div#slot3 {top: 10%;left: -40px;width: 80px;height: 80px;}
+  div#slot4 {bottom: 37%; left: -65px; width: 90px; height: 90px; }
+  div#slot5 {bottom:20%; left: -57px; width: 70px; height: 70px; }
+  div#slot6 {top: 24%; left: -80px; width: 130px; height: 130px;}
+  div#slot7 {top: 6%; left: -40px; width: 80px; height: 80px;}
+  div#slot8 {bottom: 3%; left: -80px; width: 180px; height: 180px;}
+  div#slot9 {top: 0%; left: 0; width: 200px; height: 200px;}
+  div#slot10 {bottom: 12%; left: 77px; width: 100px; height: 100px; z-index: 8;}
+  div#slot11 {top: 13%; left: 77px; width: 120px; height: 120px;}
+  div#slot12 {bottom: 4%; left: 77px; width: 160px; height: 160px;}
+  div#rejectmessage{position: absolute; top:4px; left: -194px; width: 216px;}
+  div#attendmessage{position: absolute; top:3px; right: -160px; width: 180px;}
+}
+
+@media screen and (max-width:1023px){
+  nav .nav-wrapper{width:100%;}
+  .event-height{height: auto; margin-bottom: 20px;}
+  .event-wrapper{position:relative; width:100%;}
+  .event-wrapper span{word-wrap: break-word;}
+  div#rejectmessage,
+  div#attendmessage{display: none;}
+}
